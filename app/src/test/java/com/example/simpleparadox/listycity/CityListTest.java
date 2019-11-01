@@ -97,6 +97,6 @@ class CityListTest {
     @Test
     void testCityIsEmpty() {
         CityList cityList = mockCityList();
-        assertTrue(cityList.cityIsEmpty());
+        assertFalse(cityList.cityIsEmpty());
     }
 }

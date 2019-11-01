@@ -78,4 +78,11 @@ public class CityList {
         return cities.size();
     }
 
+    public boolean cityIsEmpty() {
+        if (cities.size() == 0){
+            return true;
+        }
+        else return false;
+    }
+
 }
