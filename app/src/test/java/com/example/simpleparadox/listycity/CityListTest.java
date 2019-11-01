@@ -95,11 +95,8 @@ class CityListTest {
     }
 
     @Test
-    void testCountCitiesFailedToSuccess() {
+    void testCityIsEmpty() {
         CityList cityList = mockCityList();
-
-        cityList.delete(mockCity());
-
-        assertEquals(0, cityList.countCities());
+        assertTrue(cityList.cityIsEmpty());
     }
 }
